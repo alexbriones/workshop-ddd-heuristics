@@ -1,5 +1,5 @@
 package com.github.kmruiz.workshops.domain.ad;
 
-public interface AdPublisher extends Ad {
+public interface AdPublisher {
   PublishedAd publish(String text);
 }
