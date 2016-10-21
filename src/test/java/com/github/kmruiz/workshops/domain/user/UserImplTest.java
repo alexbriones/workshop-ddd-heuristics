@@ -1,5 +1,6 @@
-package com.github.kmruiz.workshops.domain;
+package com.github.kmruiz.workshops.domain.user;
 
+import com.github.kmruiz.workshops.domain.ad.PublishedAdImpl;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -16,7 +17,7 @@ public class UserImplTest {
   @Test
   public void when_user_publish_ad_then_returns_a_new_published_ad() {
     String text = "texto";
-    PublishedAd publishedAd = (PublishedAd) user.publish(text);
+    PublishedAdImpl publishedAd = (PublishedAdImpl) user.publish(text);
     assertThat(publishedAd.getContent()).isEqualTo(text);
   }
 
